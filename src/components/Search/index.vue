@@ -29,6 +29,8 @@ const sendQuery = () => {
   const formattedData = inputData.value.trim().replace(/ /g, '').toLowerCase();
 
   if (availableCities.includes(inputData.value)) {
+    error.value = '';
+
     router.push({
       name: '',
       query: { search: formattedData },
@@ -59,7 +61,7 @@ watch(inputData, (newInputData) => {
 </script>
 
 <template>
-  <span class="text-[red]">{{ error ? error : '' }}</span>
+  <span class="inline-block py-1 text-[red]">{{ error ? error : '' }}</span>
   <div :class="{'pb-4 rounded-[30px] border-l border-r border-b shadow-input': listVisible}" class="bg-white">
     <div class="relative w-full h-full">
       <input
