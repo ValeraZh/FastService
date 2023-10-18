@@ -7,7 +7,7 @@ const getYear = computed(() => {
 </script>
 
 <template>
-  <footer class="flex flex-wrap justify-between gap-5 mt-auto py-7 px-6">
+  <footer class="flex flex-wrap justify-between gap-5 mt-auto py-7">
     <div class="text-mainDark text-sm font-normal text-opacity-50">
       All rights reserved<br />
       Fast service {{ getYear }}
