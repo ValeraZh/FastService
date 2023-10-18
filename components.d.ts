@@ -7,12 +7,16 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    404: typeof import('./src/components/Errors/404.vue')['default']
     CarIcon: typeof import('./src/components/CarIcon/index.vue')['default']
+    CourierIcon: typeof import('./src/components/CourierIcon/index.vue')['default']
     CustomButton: typeof import('./src/components/CustomButton/index.vue')['default']
+    DeliveryCard: typeof import('./src/components/DeliveryCard/index.vue')['default']
     Footer: typeof import('./src/components/Footer/index.vue')['default']
     Header: typeof import('./src/components/Header/index.vue')['default']
     LineIcon: typeof import('./src/components/LineIcon/index.vue')['default']
     MainContent: typeof import('./src/components/MainContent/index.vue')['default']
+    PickUpIcon: typeof import('./src/components/PickUpIcon/index.vue')['default']
     RoadIcon: typeof import('./src/components/RoadIcon/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

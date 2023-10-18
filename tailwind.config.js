@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         blueGradient: 'linear-gradient(280deg, #65B3E4 15.15%, rgba(120, 161, 187, 0.00) 171.55%);',
-        redGradient: 'linear-gradient(280deg, #FF4757 15.15%, rgba(255, 255, 255, 0.00) 171.55%);'
+        redGradient: 'linear-gradient(280deg, #FF4757 15.15%, rgba(255, 255, 255, 0.00) 171.55%);',
+        activeGradient: 'linear-gradient(310deg, #65B3E4 23.89%, rgba(255, 255, 255, 0.00) 100%);'
       },
       colors: {
         mainDark: '#283044',
