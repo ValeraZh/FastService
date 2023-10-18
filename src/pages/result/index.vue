@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import { IDeliveryData } from '../../api/DTO';
+import { computed, onBeforeMount, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import fetchDelivery from './../../api/repository/index'
 
 const route = useRoute();
 const isVisible = ref<boolean>(true);
-const deliveryInfo = ref<IDeliveryData>();
+const deliveryInfo = ref();
 const activeCardIndex = ref();
 
 const toggleActiveCard = (index: number) => {

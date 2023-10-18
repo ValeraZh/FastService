@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     404: typeof import('./src/components/Errors/404.vue')['default']
     CarIcon: typeof import('./src/components/CarIcon/index.vue')['default']
-    CourierIcon: typeof import('./src/components/CourierIcon/index.vue')['default']
     CustomButton: typeof import('./src/components/CustomButton/index.vue')['default']
     DeliveryCard: typeof import('./src/components/DeliveryCard/index.vue')['default']
     Footer: typeof import('./src/components/Footer/index.vue')['default']
