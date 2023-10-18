@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { IDeliveryData } from '../../api/DTO';
 import fetchDelivery from './../../api/repository/index'
 
@@ -29,7 +29,7 @@ const fetchDeliveryInfo = (search: string) => {
       deliveryInfo.value = res;
     })
     .catch((e) => {
-      console.log(e);
+      throw new Error(e);
     });
 };
 
